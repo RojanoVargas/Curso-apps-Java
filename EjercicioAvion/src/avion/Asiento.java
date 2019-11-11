@@ -44,7 +44,7 @@ public class Asiento {
 	@Override
 	public String toString() {
 		return "Asientos [tipoAsiento=" + tipoAsiento + ", posicion=" + posicion + ", fila=" + fila + ", pasajero="
-				+ pasajeros + "]";
+				+ pasajeros + "]"; 
 	}
 		
 }
