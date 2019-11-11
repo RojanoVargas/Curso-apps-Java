@@ -1,0 +1,33 @@
+
+public class MainCoche {
+
+	public static void main(String[] args) {
+		Coche c1 = new Coche ();
+		c1.matricula = "455285P";
+		c1.marca = "Seat";
+		c1.modelo = "León";
+		c1.nuevo = false;
+		
+		Coche c2 = new Coche ();
+		c2.matricula = "455589H";
+		c2.marca = "Seat";
+		c2.modelo = "Altea";
+		c2.nuevo = false;
+		
+		Coche c3 = new Coche ();
+		c3.matricula = "158888H";
+		c3.marca = "Seat";
+		c3.modelo = "Ibiza";
+		c3.nuevo = true;
+		
+//		Coche c4 = c3;
+		
+		
+		
+		if(!c3.nuevo) {
+			System.out.println("El coche es de segunda mano");
+		}else{
+			System.out.println("El coche es nuevo");
+		}
+	}
+}

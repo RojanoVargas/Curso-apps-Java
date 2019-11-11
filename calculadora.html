@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <script> 
+        function sumar(){
+            var num1 = n1.value;
+            var num2 = n2.value;
+            resultado.value = (parseInt(num1)+ parseInt(num2));
+        }
+        function restar(){
+            var num1 = n1.value;
+            var num2 = n2.value;
+            resultado.value = (num1-num2);
+        }   
+        function multiplicar(){
+            var num1 = n1.value;
+            var num2 = n2.value;
+            resultado.value = (num1*num2);
+        }
+        function dividir(){
+            var num1 = n1.value;
+            var num2 = n2.value;
+            resultado.value = (num1/num2);
+        }
+        </script>
+</head>
+<body>
+    <!-- Introducir números -->
+    Número 1: <input id="n1" type="number"/>
+    <br><br>
+    Número 2: <input id="n2" type="number"/>
+    <br><br><br>
+    <!-- botones operacionales -->
+    <button onclick="sumar();"> + </button> 
+    <button onclick="restar();"> - </button> 
+    <button onclick="multiplicar();"> * </button> 
+    <button onclick="dividir();"> / </button>
+    <br><br>
+    <!-- Imprimir resultado -->
+    Resultado: <input id="resultado" type="number"/>
+</body>
+</html>

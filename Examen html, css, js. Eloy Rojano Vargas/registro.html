@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de perro</title>
+    <style>
+    body  {
+    background-image: url("fondo2.jpg")
+    }
+    tr{
+        /* desde aquí puede cambiarse el color de todos los tr */
+        color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color:white">Registra a tu perro si crees que es lo más feo que hay</h1>
+        <table style="max-width: 100%;">
+            <!-- pero vence el color con el que atacas directamente -->
+			<tr style="color:yellow">
+				<td style="max-width: 50%;">Tu nombre: <input id="nombre" type="text" style=""/></td> 
+				<td style="max-width: 50%;">Nombre de tu perro: <input id="nombre" type="text" style=""/></td>
+			</tr>
+			<tr>
+			    <td>Dirección: <input id="address" type="text" placeholder="La tuya"/></td> 
+                <td>Piso: <input type="number" placeholder="número de piso"/></td>
+                <td>Puerta: <input id="nombre" type="text" placeholder="número / letra"/></td>
+			</tr>
+			<tr>
+				<td>Email: <input type="email" placeholder="Añade tu email" style=""/></td>
+				<td>Contraseña: <input type="number" placeholder="Tu contraseña" style=""/></td>
+				<td>Repetir contraseña: <input type="number" placeholder="Tu contraseña otra vez" style=""/></td>
+            </tr>
+            <tr>
+                <td>Qué tipo de perro es:</td>
+            </tr>
+            <tr>
+				<td><input type="radio" name="tipoperro"> Perro grande</td>
+				<td><input type="radio" name="tipoperro"> Perro mediano</td>
+				<td><input type="radio" name="tipoperro"> Perro patada</td>
+            </tr> <br>
+			<tr>
+                <td>¿Qué hace a tu perro especialmente feo?</td>
+            </tr>
+            <tr>
+				<td><input type="checkbox"> Es bizco</td>
+				<td><input type="checkbox"> No para de hacer ruidos</td>
+				<td><input type="checkbox"> Vomita mucho</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Camina raro</td>
+				<td><input type="checkbox"> La cara, en general</td>
+                <td><input type="checkbox"> Tiene una forma rara</td>
+            </tr>
+            <tr>
+                <td><textarea placeholder="Cuéntanos más de su fealdad"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="file" accept="image/*"><input type="submit"></td>
+            </tr>
+            <tr>
+                <td><button><a href="login.html">registra a tu perro</a></button></td>
+            </tr>
+        </table>
+</body>
+</html>

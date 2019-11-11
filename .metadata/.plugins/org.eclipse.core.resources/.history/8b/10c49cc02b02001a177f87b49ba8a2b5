@@ -1,0 +1,10 @@
+package javabean;
+
+import java.util.ArrayList;
+
+public class Casa {
+	double precio;
+	Direccion direccion;
+	ArrayList<Habitacion>listaHabitacion;
+	Persona propietario;
+}

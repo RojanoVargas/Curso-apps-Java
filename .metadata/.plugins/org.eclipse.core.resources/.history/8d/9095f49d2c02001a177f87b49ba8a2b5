@@ -1,0 +1,11 @@
+package javabean;
+
+public class Habitacion {
+	private String tipoHabitacion;
+	private double metros;
+
+	public Habitacion(String tipoHabitacion) {
+		super();
+		this.tipoHabitacion = tipoHabitacion;
+	}
+}

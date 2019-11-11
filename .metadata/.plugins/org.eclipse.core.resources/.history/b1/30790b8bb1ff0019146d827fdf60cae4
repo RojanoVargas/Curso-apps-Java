@@ -1,0 +1,59 @@
+/* Funciones o métodos son cajas qeu te tenemos por qué saber
+ * cómo hacen una funcionalidad (caja negra), pero sí uusarla.
+ * Básicamente una función tiene de 0 a N parámetros de entrada
+ * y de 0 a 1 parámetros de salida.
+ * Cuando usamos una función tenemos que saber cuántos parámetros
+ * de entrada tiene y si tiene parámetros de salida. Por ejemplo:
+ * System.out.println ("Ola ke ase");
+ * La función println tiene 1 parámetro de entrada y 0 de salida
+ * int i = sc.nextInt();
+ * La función nextInt tiene 0 parámetros de entrada y 1 de salida
+ */
+
+
+
+public class MainFunciones {
+	//Esta también es una función, una función muy especial porque
+	//es la función Main, es decir, el punto de entrada de nuestra
+	//aplicación. Esta función tiene un parámetro de entrada y no
+	//tiene parámetros de salida (porque pone void).
+
+	public static void main(String[] args) {
+		System.out.println("Inicio del programa");
+		mostrarMenu();
+		imprimirNombre("Félix");
+		System.out.println("Fin del programa");
+		imprimirNombreApellidos("Juan", "Romero Fernández");
+	}
+	
+	//podemos crear todas las funciones que queramos, las funciones
+	//se crean dentro de la clase. No importa la posición donde se
+	//crea la función, simplemente tiene que estar dentro de la clase.
+	//Por ejemplo, 
+	//1º se pone la visibilidad, en este caso "public"
+	//2º se pone el valor de retorno (si tuviera), en este caso
+	//"void", porque no tiene valores de retorno.
+	//3º se pone el nombre de la función
+	//4º se ponen parámetros de entrada. En caso de tenerlos, van
+	//entre paréntesis y si tiene varios, van separados por ",".
+	//En este caso, no tenemos ni parámetros de entrada ni de
+	//salida
+	public static void mostrarMenu() {
+		System.out.println("1 - Crear persona");
+		System.out.println("2 - Borrar persona");
+		System.out.println("3 - Modificar persona");
+		System.out.println("4 - Buscar persona");
+		System.out.println("0 - Salir del programa");
+	}
+	//en esta función quiero imprimir de manera bonita un nombre
+	//por pantalla
+	public static void imprimirNombre(String nombre) {
+		System.out.println(nombre);
+	}
+	public static void imprimirNombreApellidos(String nombre, String apellidos) {
+		System.out.println("*************************");
+		System.out.println("***" + nombre + "***" + apellidos + "***");
+		System.out.println("*************************");
+	}
+
+}

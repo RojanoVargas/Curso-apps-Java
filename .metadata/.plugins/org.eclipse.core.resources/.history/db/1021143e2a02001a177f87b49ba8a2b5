@@ -1,0 +1,8 @@
+package javabean;
+
+public class Casa {
+	double precio;
+	Direccion direccion;
+	ArrayList <Habitacion>listaHabitacion;
+	Persona propietario;
+}

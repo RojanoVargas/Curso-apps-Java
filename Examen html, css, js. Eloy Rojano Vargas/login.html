@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body  {
+      background-image: url("fondo.jpg")
+    }
+  </style>
+  <script>
+    function logueo(){
+      // var hola = "rojano.vargas@gmail.com";
+      var metemail = mail.value;
+      if (metemail != "rojano.vargas@gmail.com"){
+        alert("ningún perro feo registrado con ese nombre");
+      }
+      else {
+        alert("bienvenid@, am@ de un perro feo");
+        window.location.href = 'detalleusuario1.html';
+      }
+    }
+  </script>
+</head>
+<body>
+  <div style="width: 30%;">
+    Email: <input type="text" style="width: 100%;" id="mail" placeholder="prueba con rojano.vargas@gmail.com"> <br> <br>
+    Contraseña: <br><input type="text" style="width: 82%;" placeholder="aquí pon lo que quieras">
+    <button onclick="logueo();"> login</button>
+    <br><br><br><a href="registro.html">registra a tu perro</a>
+  </div>
+</body>
+</html>

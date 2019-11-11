@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function saludar(nombre,apellido){
+            alert("hola me has invocado " + nombre + " " + apellido);
+        }
+        
+        function dobleSaludo(){
+            alert("lo que sea");
+            alert("otro lo que sea");
+        }
+        function saludarNombre(){
+            var n = nombre.value;//nombre es el id del elemento
+            //alert("hola " + n);//y value es el valor que tenga la caja
+                                //en ese momento
+            saludo.value = "hola ";
+        }
+    </script>
+</head>
+<body>
+    Nombre: <input id="nombre" type="text"/>
+    <!-- <button onclick="saludar('pepe','gomez');">Pulsame!</button>
+    <br/>
+    <button onclick="saludar('juan','Palomo');">Otro Pulsame!</button>
+    <br/>
+    <button onclick="saludar('maria', 'garrrido');">Otro Pulsame!</button>
+    <br/>
+    <button onclick="saludar('elisa',' longo');">Otro Pulsame!</button>
+    <br/>
+    <button onclick="dobleSaludo();">boton doble saludo</button>
+    <br/> -->
+    <button onclick="saludarNombre();">boton saludo desde la caja</button>
+    Saludo: <input id="saludo" type="text"/>
+    
+</body>
+</html>

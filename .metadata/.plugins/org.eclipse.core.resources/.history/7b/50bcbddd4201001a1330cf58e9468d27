@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+//Pedirle al usuario tres coches y guardarlos en un array de coches. 
+//Después sacar por pantalla los 3 coches del array
+public class MainCoche2 {
+
+	public static void main(String[] args) {
+		Coche c6 = new Coche ();
+		Scanner sc = new Scanner (System.in);
+		System.out.println("REGISTRE UN COCHE: ");
+		System.out.println("Matrícula: ");
+		c6.matricula = sc.toString();		
+		System.out.println("Marca: ");
+		c6.marca = sc.toString();
+		System.out.println("Modelo: ");
+		c6.modelo = sc.toString();
+//		System.out.println("¿Es nuevo? S/N");
+		System.out.println(c6.marca + c6.matricula);
+		
+		
+		
+		//recorrer el array
+//		for(String valor: listaStrings) {
+//			System.out.println(valor);
+//		}
+	}
+
+}

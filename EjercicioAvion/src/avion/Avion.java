@@ -1,0 +1,60 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class Avion {
+	private ArrayList <Pasajero> listaPasajeros;
+	private String tipoAvion;
+	private ArrayList <Asiento> asientos;
+	
+	public ArrayList<Pasajero> getListaPasajeros() {
+		return listaPasajeros;
+	}
+	public void setListaPasajeros(ArrayList<Pasajero> listaPasajeros) {
+		this.listaPasajeros = listaPasajeros;
+	}
+	public String getTipoAvion() {
+		return tipoAvion;
+	}
+	public void setTipoAvion(String tipoAvion) {
+		this.tipoAvion = tipoAvion;
+	}
+	public ArrayList<Asiento> getAsientos() {
+		return asientos;
+	}
+	public void setAsientos(ArrayList<Asiento> asientos) {
+		this.asientos = asientos;
+	}
+	
+	@Override
+	public String toString() {
+		return "Avion [listaPasajeros=" + listaPasajeros + ", tipoAvion=" + tipoAvion + ", asientos=" + asientos + "]";
+	}
+	//esto lo uso para contar pasajeros
+	public int contarPasajeros() {
+		return getListaPasajeros().size();
+	}
+	
+	public int contarMaletas() {
+		listaPasajeros.size();
+		int numMaletas=0;
+		for(Pasajero valor: listaPasajeros) {
+			int numero = valor.getListaMaletas().size();
+			numMaletas += numero;
+		}
+		return numMaletas;
+	}
+	
+	public int contarMaletasDeTipo(String tipo) {
+		int contadorMaletas = 0;
+		for (Pasajero p : getListaPasajeros()) {
+			for (Maleta m : p.getListaMaletas()) {
+				if(m.getTipoMaleta().equalsIgnoreCase(tipo)){
+					contadorMaletas++;
+				}
+			}
+		}
+		return contadorMaletas;
+	}
+	
+}

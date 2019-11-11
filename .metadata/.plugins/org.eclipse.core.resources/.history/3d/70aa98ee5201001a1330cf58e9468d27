@@ -1,0 +1,77 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+//Pedirle al usuario tres coches y guardarlos en un array de coches. 
+//Después sacar por pantalla los 3 coches del array. Hecho por Félix
+// en MainCocheArray con pequeñas funciones.
+
+//la función del booleano no funciona, y a partir del segundo coche hace cosas raras
+public class MainCoche2 {
+
+	public static void main(String[] args) {
+		Coche c1 = new Coche ();
+		Scanner sc = new Scanner (System.in);
+//		Scanner sc2 = new Scanner (System.in);
+		System.out.println("REGISTRE EL PRIMER COCHE: ");
+		System.out.println("Matrícula: ");
+		c1.matricula = sc.nextLine();		
+		System.out.println("Marca: ");
+		c1.marca = sc.nextLine();
+		System.out.println("Modelo: ");
+		c1.modelo = sc.nextLine();
+		System.out.println("¿Es nuevo? S/N");
+//		c1.nuevo = sc2.nextBoolean();
+		c1.nuevo = sc.hasNextLine();
+		ArrayList<Coche> listaCoches1 = new ArrayList<Coche>();
+		listaCoches1.add(c1);
+		
+
+		Coche c2 = new Coche ();
+		System.out.println("REGISTRE EL SEGUNDO COCHE: ");
+		System.out.println("Matrícula: ");
+		c1.matricula = sc.nextLine();		
+		System.out.println("Marca: ");
+		c1.marca = sc.nextLine();
+		System.out.println("Modelo: ");
+		c1.modelo = sc.nextLine();
+		System.out.println("¿Es nuevo? S/N");
+//		c1.nuevo = sc2.nextBoolean();
+		c1.nuevo = sc.hasNextLine();
+
+		listaCoches1.add(c2);
+		
+		Coche c3 = new Coche ();
+		System.out.println("REGISTRE EL TERCER COCHE: ");
+		System.out.println("Matrícula: ");
+		c1.matricula = sc.nextLine();		
+		System.out.println("Marca: ");
+		c1.marca = sc.nextLine();
+		System.out.println("Modelo: ");
+		c1.modelo = sc.nextLine();
+		System.out.println("¿Es nuevo? S/N");
+//		c1.nuevo = sc2.nextBoolean();
+		c1.nuevo = sc.hasNextLine();
+		
+		listaCoches1.add(c3);		
+		
+		
+		//recorrer el array
+		for(Coche valor: listaCoches1) {
+			imprimirCoche2(valor);
+			
+		}
+	}
+	
+	public static void imprimirCoche2 (Coche coche) {
+		String nuevo = "0";
+		if(nuevo.equals("S")) {
+			nuevo = "El coche es nuevo";
+		}else if (nuevo.contentEquals("N")){
+			nuevo = "El coche es de segunda mano";
+		}
+		System.out.println("Matrícula: " + coche.matricula);
+		System.out.println("Marca: " + coche.marca);
+		System.out.println("Modelo: " + coche.modelo);
+		System.out.println("¿Es nuevo?: " + nuevo);
+	}
+}

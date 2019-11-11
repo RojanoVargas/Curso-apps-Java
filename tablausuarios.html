@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>tabla usuarios</title>
+	</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+		function random_bg_color() {
+			var x = Math.floor(Math.random() * 256);
+			var y = Math.floor(Math.random() * 256);
+			var z = Math.floor(Math.random() * 256);
+			var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		 console.log(bgColor);
+		  
+			document.body.style.background = bgColor;
+			}
+		
+		
+		</script>
+	<body>
+		<h1>iPeePee team</h1>
+		<table>
+			<tr>
+				<th>Nombre</th> 
+				<th>Apellido/s</th>
+				<th>Cargo</th>
+				<th>eMail</th>
+				<th>Detalle</th>
+			</tr>
+			<tr>
+				<td><a onmouseover='random_bg_color();'>Eloy</a></td>
+				<td>Rojano Vargas</td>
+				<td>Cofundador</td>
+				<td>rojano.vargas@gmail.com</td>
+				<td><a href="detalleusuario1.html">Ver</a></td>
+			</tr>
+			<tr>
+				<td>Raquel</td>
+				<td>Martínez Crespo</td>
+				<td>Cofundadora</td>
+				<td>whatever@gmail.com</td>
+				<td><a href="detalleusuario2.html">Ver</a></td>
+			</tr>
+			<tr>
+				<td>Laura</td>
+				<td>Maya Rufo</td>
+				<td>Cofundadora</td>
+				<td>whatever2@gmail.com</td>
+				<td><a href="detalleusuario3.html">Ver</a></td>
+				</tr>
+			</table>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+
+		ArrayList<Pasajero> listaPasajeros = new ArrayList<Pasajero>();
+		Pasajero juan = new Pasajero();
+		
+		juan.setNombre("Juan López Pérez");
+		juan.setDni("41639987M");
+		juan.setTelefono("981654732");
+		listaPasajeros.add(juan);
+	}
+
+}

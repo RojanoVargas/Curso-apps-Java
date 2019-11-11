@@ -1,0 +1,9 @@
+package avion;
+import java.util.ArrayList;
+
+public class Pasajeros {
+	private String nombre;
+	private String dni;
+	private String telefono;
+	private ArrayList <Maleta> tipoMaleta;
+}

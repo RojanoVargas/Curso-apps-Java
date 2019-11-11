@@ -1,0 +1,14 @@
+package entidad;
+
+public class MainPersonaJavaBean {
+
+	public static void main(String[] args) {
+		Persona p = new Persona();
+		p.setNombre("Juanchito");
+		p.setEdad(33);
+		p.setPeso(67.8);
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+
+		ArrayList<Pasajero> pasajeros = new ArrayList<Pasajero>();
+		Pasajero pasajero = new Pasajero();
+	}
+
+}

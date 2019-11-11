@@ -1,0 +1,8 @@
+//mostrar un menú que tenga 
+//1 - alta película
+//2 - listar películas
+//0 - salir del programa
+// titulo, genero, director, puntuar(opcional)
+public class Peliculas {
+
+}

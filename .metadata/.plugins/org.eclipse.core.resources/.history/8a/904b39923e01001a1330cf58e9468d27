@@ -1,0 +1,10 @@
+//Pedirle al usuario tres coches y guardarlos en un array de coches. 
+//Después sacar por pantalla los 3 coches del array
+public class MainCoche2 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

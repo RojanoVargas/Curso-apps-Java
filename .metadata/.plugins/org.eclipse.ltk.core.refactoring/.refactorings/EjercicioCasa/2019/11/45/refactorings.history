@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;JavaBean&apos; to &apos;javabean&apos;&#x0D;&#x0A;- Original project: &apos;EjercicioCasa&apos;&#x0D;&#x0A;- Original element: &apos;EjercicioCasa/src/JavaBean&apos;&#x0D;&#x0A;- Renamed element: &apos;EjercicioCasa/src/javabean&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;JavaBean&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;JavaBean" name="javabean" qualified="false" references="true" stamp="1573217877220" textual="false" version="1.0"/>
+</session>

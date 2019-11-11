@@ -1,0 +1,18 @@
+
+public class datosEnMayus {
+
+	public static void main(String[] args) {
+
+		imprimirDatos("Juan", "Velasco", 19, 654987123);
+		imprimirDatos("Fran", "Cisco", 20, 654987196);
+		imprimirDatos("Pepe", "Viyuela", 48, 654987523);
+		imprimirDatos("Antonio", "Huevo", 19, 698787123);
+	}
+
+	
+	public static void imprimirDatos(String nombre, String apellidos, int edad, int telefono) {
+		System.out.println("***************************");
+		System.out.println("***" + nombre.toUpperCase() + " "+ apellidos.toUpperCase() + "***" + edad + "***" + telefono);
+		System.out.println("***************************");
+	}
+}

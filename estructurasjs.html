@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras de control js</title>
+    <script>
+    var cierto = true;
+    
+    // Los if
+    if(cierto == true){
+        console.log("El valor es cierto");
+    }
+
+    if(cierto){
+        console.log("El valor es cierto");
+    } //Este y el anterior hacen lo mismo
+
+    if(cierto != true){
+        console.log("El valor es falso");
+    }
+    if(!cierto){
+        console.log("El valor es falso");
+    } //Este y el anterior hacen lo mismo
+
+    if(cierto == false){
+        console.log("El valor es falso");
+    }
+    if(cierto){
+        console.log("El valor es cierto");
+        console.log ("y lo sabes");
+    } //las llaves engloban varias sentencias
+
+    if(!cierto){
+        console.log("Es falso");
+    }
+    console.log ("y lo sabes");
+    //Al no ser !cierto, se salta el if y solo imprime el "y lo sabes"
+
+    var cierto = false;
+    if(!cierto){
+        console.log("Es falso");
+    console.log ("de hecho, muy falso");
+    }
+    //El valor de cierto es ahora false, y por tanto se cumple la condición
+
+    var numero1 = 1;
+    var numero2 = 10;
+
+    if(numero1 > 0 && numero2 < 20){
+        console.log("El numero es mayor que 0 Y menor que 20")
+    }
+
+    if(numero1 < 0 || numero2 < 20){
+        console.log("El numero es mayor que 0 OR menor que 20")
+    }
+
+    if(cierto){
+        console.log("la variable es cierta");
+    }else{
+        console.log("la variable NO es cierta");
+    }
+
+    var numero = 1;
+    if(numero == 0){
+        console.log("el numero vale 0");
+    }else if(numero == 1){
+        console.log("el numero vale 1");
+    }else if(numero == 2){
+        console.log("el numero vale 2");
+    }else{
+        console.log("el numero no vale ni 0, ni 1, ni 2");
+    }
+
+   console.log("-------- BUCLES --------");
+   /*primero declaramos la variable y la iniciamos
+   segundo condición por la que el bucle se ejecutará
+   tercero, cuánto incrementamos la variable en cada salto del bucle */
+    for (var i=0;i<=10;i++){
+        console.log("el numero es: " + i);
+    }
+
+    var contador = 0;
+    while(contador <= 10){
+        console.log("el contador vale: " + contador);
+        contador++;
+    }
+    console.log(contador); //aquí el contador vale 11, porque el contador ++ le ha sumado uno extra
+    
+    contador = 0;
+    do{
+        console.log("el contador vale: " + contador);
+        contador++; 
+    }
+    while(contador <= 10);
+    console.log(contador);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

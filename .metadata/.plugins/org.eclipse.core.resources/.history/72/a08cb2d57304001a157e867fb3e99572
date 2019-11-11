@@ -1,0 +1,24 @@
+package avion;
+
+import java.util.ArrayList;
+
+import javabean.Habitacion;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+
+		ArrayList<Pasajero> listaPasajeros = new ArrayList<Pasajero>();
+		Pasajero pasajero = new Pasajero();
+		
+		pasajero.getNombre();
+		pasajero.getDni();
+		pasajero.getDni();
+		pasajero.getTelefono();
+		
+		Pasajero juan = new Pasajero();
+		
+		listaPasajeros.add(juan);
+	}
+
+}
