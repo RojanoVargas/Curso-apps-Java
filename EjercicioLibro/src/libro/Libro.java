@@ -43,6 +43,9 @@ public class Libro {
 	
 	@Override
 	public String toString() {
-		return "Libro [isbn=" + isbn + ", titulo=" + titulo + ", editorial=" + editorial + ", autor=" + autor + "]";
+		return "El libro tiene los siguientes datos: ISBN=" + isbn + ", título=" + titulo + ", editorial=" + editorial + ", autor=" + autor;
+		//int i = 0;
+		//return "El libro " + i + " tiene los siguientes datos: ISBN=" + isbn + ", título=" + titulo + ", editorial=" + editorial + ", autor=" + autor;
+//		i=i++; esto no va, porque es un array dinámico, no hay un orden
 	}
 }

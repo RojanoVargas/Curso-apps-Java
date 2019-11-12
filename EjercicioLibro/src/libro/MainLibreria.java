@@ -19,26 +19,28 @@ public class MainLibreria {
 				String isbn = leerDato("ISBN", sc);
 				String titulo = leerDato("Título", sc);
 				String editorial = leerDato("Editorial", sc);
-				Autor autor = leerDatoAutor( sc);
-				
+				Autor autor = leerDatoAutor(sc);
 				Libro libro = new Libro(isbn, titulo, editorial, autor);
 				libreria1.getListaLibros().add(libro);
+				
 			}else if(opcion == 2) {
-				for(Libro p : libreria1.getListaLibros()) {
-					System.out.println(p);
+				int i = 1;
+				for(Libro lib : libreria1.getListaLibros()) {
+ 					System.out.print(" " + i + " ");
+					System.out.println(lib);
+ 					i++;
 				}
 			}else if(opcion == 3) {
-				System.out.println("meter aquí función que lo haga");
-				if(
-						
-						Libro p : libreria1.getListaLibros()) {
-					System.out.println(p);
+				Libro libr = mostrarMenu2(sc, listaLibros);
+				if (libr == null) {
+					System.out.println("El libro no existe, bro");
+				}else {
+				System.out.println(libr);
 				}
-				
 			}
+				
 		}while(opcion != 0);
 		if (opcion == 0) {
-			System.out.println(listaLibros);
 			System.out.println("Venga, adiós");
 		}
 		
@@ -53,6 +55,18 @@ public class MainLibreria {
 		String sOpcion = sc.nextLine();//leo en formato String
 		int iOpcion = Integer.parseInt(sOpcion);//convierto el tipo string a entero
 		return iOpcion;
+	}
+	
+	public static Libro mostrarMenu2(Scanner sc, ArrayList<Libro> listaLibros) {
+		
+		System.out.println("Introduzca ISBN");
+		String scanner = sc.nextLine();
+		for (Libro lib : listaLibros) {
+			if (scanner.equalsIgnoreCase(lib.getIsbn())) {
+				return lib;
+			}	
+		}
+		return null;
 	}
 	
 	public static String leerDato(String dato, Scanner sc) {
@@ -75,7 +89,4 @@ public class MainLibreria {
 		
 		return autor;
 	}
-	
-	
-	
 }
