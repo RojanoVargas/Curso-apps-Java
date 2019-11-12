@@ -29,6 +29,10 @@ public class MainPelicula {
 				}
 			}
 		}while(opcion != 0);
+		if (opcion == 0) {
+			System.out.println(listaPeliculas);
+			System.out.println("Venga, adiós");
+		}
 	}
 	
 	public static int mostrarMenu(Scanner sc) {
