@@ -7,6 +7,15 @@ public class Libro {
 	private String editorial;
 	private Autor autor;
 	
+	
+	
+	public Libro(String isbn, String titulo, String editorial, Autor autor) {
+		super();
+		this.isbn = isbn;
+		this.titulo = titulo;
+		this.editorial = editorial;
+		this.autor = autor;
+	}
 	public String getIsbn() {
 		return isbn;
 	}
