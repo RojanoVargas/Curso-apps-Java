@@ -31,12 +31,22 @@ public class MainLibreria {
  					i++;
 				}
 			}else if(opcion == 3) {
-				Libro libr = mostrarMenu2(sc, listaLibros);
-				if (libr == null) {
+				Libro lib = mostrarMenu2(sc, listaLibros);
+				if (lib == null) {
 					System.out.println("El libro no existe, bro");
 				}else {
-				System.out.println(libr);
+				System.out.println(lib);
 				}
+//			}else if(opcion == 4) {
+//				System.out.println("Introduzca una editorial para buscar el libro");
+//				String editorial = sc.nextLine();
+//				ArrayList<Libro> listalibrosEditorial = lib.busquedaEditorial(editorial);
+//				libreria(listaLibrosEditorial);	
+			}else if(opcion == 5) {
+				System.out.println("Introduzca un nombre para buscar el autor");
+				String nombre = sc.nextLine();
+				ArrayList<Autor> listaAutores = lib.busquedaAutorPorNombre(nombre);
+				System.out.println(listaAutores);	
 			}
 				
 		}while(opcion != 0);
@@ -50,6 +60,8 @@ public class MainLibreria {
 		System.out.println("1 - Alta libro");
 		System.out.println("2 - Listar libros");
 		System.out.println("3 - Buscar libro por isbn");
+		System.out.println("4 - Buscar libro por editorial");
+		System.out.println("5 - Buscar autor por nombre");
 		System.out.println("0 - Salir del programa");
 		
 		String sOpcion = sc.nextLine();//leo en formato String
@@ -67,6 +79,26 @@ public class MainLibreria {
 			}	
 		}
 		return null;
+	}
+	
+	public ArrayList <Libro> busquedaEditorial(String editorial){
+		ArrayList <Libro> listaLibrosEditorial = new ArrayList<Libro>();
+		for (Libro lib : listaLibrosEditorial) {
+			if(lib.getEditorial().equalsIgnoreCase(editorial)) {
+				listaLibrosEditorial.add(lib);
+			}
+		}
+		return listaLibrosEditorial;
+	}
+	
+	public ArrayList <Autor> busquedaLibroPorNombreAutor(String nombre){
+		ArrayList <Autor> listaLibrosPorAutor = new ArrayList<Libro>();
+		for (Libro lib : listaLibros) {
+			if(lib.getAutor().getNombre().equalsIgnoreCase(nombre)) {
+				listaLibrosPorAutor.add(lib.getAutor());
+			}
+		}
+		return listaLibrosPorAutor;
 	}
 	
 	public static String leerDato(String dato, Scanner sc) {
